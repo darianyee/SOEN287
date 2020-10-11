@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar{
+    background-image: linear-gradient(to right, papayawhip, lightskyblue);
+    padding: 0 !important;
+}
+
+.navbar-brand img{
+    height: 95px;
+    padding-left:20px ;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    color: black !important;
+    font-weight: 600;
+    float: right;
+    text-align: left;
+}
+
+.fa-bars{
+    color: black;
+    font-size: 30px !important;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+/*******************************BANNER SECTION****************************************/
+
+#banner{
+    /*background-image: linear-gradient(to right, antiquewhite, pink);*/
+    background-image: url("Travel.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top:5% ;
+}
+
+.promo-title{
+    /*text-indent: 25px;*/
+    text-align: right;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.play-btn{
+    width: 45px;
+    /*margin: 20px;*/
+}
+
+#banner a{
+    color: white;
+    text-decoration: none;
+}
+
+.bottom-img{
+    width: 100%;
+}
+
+.img-fluid{
+    margin: 0px;
+}
+
+
+/*******************************LOGIN SECTION****************************************/
+.login{
+    background-color: lightsteelblue;
+}
+
+/*******************************FOOTER SECTION****************************************/
+#footer{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.footer-img{
+    width: 100%;
+}
+
+.footer-box{
+    padding: 20px;
+}
+
+.footer-box img{
+    width: 100px;
+}
+
+.footer-box .fa{
+    margin-right: 8px;
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 2px;
+    background-image: linear-gradient(to right, dodgerblue, darkslateblue);
+}
+
+.footer-box .form-control{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 25px;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+.footer-box .btn-primary{
+    box-shadow: none !important;
+    border: none;
+    border-radius: 25px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, dodgerblue, darkslateblue);
+}
+
+hr{
+    background-color: white;
+}
+
+.copyright{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}

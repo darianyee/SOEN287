@@ -1,0 +1,76 @@
+{% extends "Base.html" %}
+<head>
+    {% block head %}
+    <title>Hawaii</title>
+    <link rel="stylesheet" type="text/css" href="/static/Hawaii.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% endblock %}
+</head>
+
+<body>
+<!------------------------------------NAV SECTION---------------------------------------->
+
+
+<!------------------------------------BANNER SECTION---------------------------------------->
+
+{% block banner %}
+<section id="banner">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="promo-title">HAWAII</p>
+        </div>
+    </div>
+</div>
+   <!-- <img src="swoosh.png" class="bottom-img">-->
+ </section>
+{% endblock %}
+
+<!------------------------------------Services---------------------------------------->
+
+{% block services %}
+<section id="services">
+    <div class="container text-center">
+        <h1 class="title">Popular Attractions</h1>
+        <div class="row">
+
+            <div class="col-md-4 services">
+                <img src="{{ url_for('static', filename='images/mountain.png')}}" class="service-img">
+                <h4>Stairway to Heaven</h4>
+                <p>The Haʻikū Stairs, also known as the Stairway to Heaven or Haʻikū Ladder, is a steep hiking trail on the island of Oʻahu, Hawaii.
+                    The total 3,922 steps span along Oahu's Ko'olau mountain range."Haiku" does not refer to the Japanese poetry genre. The area is
+                    named "Haʻikū" after the Kahili flower.</p>
+            </div>
+
+            <div class="col-md-4 services">
+                <img src="{{ url_for('static', filename='images/volcano.png')}}" class="service-img">
+                <h4>Hawaiʻi Volcanoes National Park</h4>
+                <p>Hawaii Volcanoes National Park is on Hawaii Island (the Big Island). At its heart are the Kīlauea and Mauna Loa active volcanoes.
+                    The Crater Rim Drive passes steam vents and the Jaggar Museum, which features volcanology exhibits and a viewpoint overlooking
+                    Halema'uma'u Crater. Thick ferns mark the entrance to the Thurston Lava Tube (Nāhuku). The Chain of Craters Road weaves over lava.
+                    Trails crisscross the park.</p>
+            </div>
+            <div class="col-md-4 services">
+                <img src="{{ url_for('static', filename='images/beach.png')}}" class="service-img">
+                <h4>Waikiki Beach</h4>
+                <p>High-rise hotels line the shore in Waikiki, a vibrant neighborhood known for its popular surf beach. Designer fashion stores line
+                    Kalakaua Avenue and nearby streets, and the area buzzes after dark with waterside cocktail bars, fine dining and Kuhio Beach hula shows.
+                    Honolulu Zoo is home to Komodo dragons and wandering peacocks, while parrotfish and urchins inhabit Waikiki Aquarium’s reef exhibit.</p>
+            </div>
+        </div>
+        <form action="https://www.google.com/travel/explore?tfs=CBkQAxooEgoyMDIwLTAzLTEwagwIAhIIL20vMDUycDdyDAgEEggvbS8wM2doNBooEgoyMDIwLTAzLTE0agwIBBIIL20v
+        MDNnaDRyDAgCEggvbS8wNTJwN0ABSAFSA0NBRA&curr=CAD&gl=ca&hl=en&authuser=0&origin=https%3A%2F%2Fwww.google.com">
+        <button type="submit" class="btn btn-primary">Book A Flight</button>
+        </form>
+    </div>
+
+</section>
+{% endblock %}
+<!------------------------------------FOOTER SECTION---------------------------------------->
+
+
+</body>

@@ -1,0 +1,75 @@
+{% extends "Base.html" %}
+<head>
+    {% block head %}
+    <title>Switzerland</title>
+    <link rel="stylesheet" type="text/css" href="/static/Switzerland.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% endblock %}
+</head>
+
+<body>
+<!------------------------------------NAV SECTION---------------------------------------->
+
+
+<!------------------------------------BANNER SECTION---------------------------------------->
+{% block banner %}
+<section id="banner">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <p class="promo-title">SWITZERLAND</p>
+        </div>
+    </div>
+</div>
+   <!-- <img src="swoosh.png" class="bottom-img">-->
+ </section>
+{% endblock %}
+<!------------------------------------Services---------------------------------------->
+
+{% block services %}
+<section id="services">
+    <div class="container text-center">
+        <h1 class="title">Popular Attractions</h1>
+        <div class="row">
+
+            <div class="col-md-4 services">
+                <img src="{{ url_for('static', filename='images/mountain.png')}}" class="service-img">
+                <h4>Mount Pilatus</h4>
+                <p>Pilatus, also often referred to as Mount Pilatus, is a mountain massif overlooking Lucerne in Central Switzerland.
+                    It is composed of several peaks, of which the highest is named Tomlishorn.</p>
+            </div>
+
+            <div class="col-md-4 services">
+                <img src="{{ url_for('static', filename='images/waterfall.png')}}" class="service-img">
+                <h4>Rhine Falls</h4>
+                <p>The Rhine Falls (German: Rheinfall) is a waterfall located in Switzerland and the most powerful waterfall in
+                    Europe.The falls are located on the High Rhine on the border between the cantons of Schaffhausen and
+                    Zürich, between the municipalities of Neuhausen am Rheinfall and Laufen-Uhwiesen/Dachsen, next to the town of
+                    Schaffhausen in northern Switzerland.</p>
+            </div>
+            <div class="col-md-4 services">
+                <img src="{{ url_for('static', filename='images/castle.png')}}" class="service-img">
+                <h4>Chillon Castle</h4>
+                <p>Chillon Castle is an island castle located on Lake Geneva, south of Veytaux in the canton of Vaud. It is situated
+                    at the eastern end of the lake, on the narrow shore between Montreux and Villeneuve, which gives access to the
+                    Alpine valley of the Rhône.</p>
+            </div>
+        </div>
+
+        <form action="https://www.google.com/travel/explore?tfs=CBkQAxooEgoyMDIwLTAzLTEwagwIAhIIL20vMDUycDdyDAgEEggvbS8wM2doNBooEgoyMDIwLTAzLTE0agwIBBIIL20v
+        MDNnaDRyDAgCEggvbS8wNTJwN0ABSAFSA0NBRA&curr=CAD&gl=ca&hl=en&authuser=0&origin=https%3A%2F%2Fwww.google.com">
+        <button type="submit" class="btn btn-primary">Book A Flight</button>
+        </form>
+
+    </div>
+
+</section>
+{% endblock %}
+<!------------------------------------FOOTER SECTION---------------------------------------->
+
+
+</body>

@@ -1,0 +1,96 @@
+{% extends 'Base.html' %}
+<body>
+
+<title>{% block table %}{{ super() }} - {% endblock %}} </title>
+
+{% block contents %}
+<div class="container">
+  <h2>EPL Table</h2>
+  <p>Displaying the leader board of the top 10 teams in the English Premier League</p>
+  <table class="table">
+    <thead>
+      <tr>
+          <th>Club</th>
+          <th>Wins</th>
+          <th>Draws</th>
+          <th>Losses</th>
+          <th>Points</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+          <td>Liverpool</td>
+          <td>25</td>
+          <td>1</td>
+          <td>0</td>
+          <td>76</td>
+      </tr>
+      <tr>
+          <td>Manchester City</td>
+          <td>16</td>
+          <td>3</td>
+          <td>6</td>
+          <td>51</td>
+      </tr>
+      <tr>
+          <td>Leicester City</td>
+          <td>15</td>
+          <td>5</td>
+          <td>6</td>
+          <td>50</td>
+      </tr>
+      <tr>
+          <td>Chelsea</td>
+          <td>12</td>
+          <td>5</td>
+          <td>9</td>
+          <td>41</td>
+      </tr>
+      <tr>
+          <td>Tottenham</td>
+          <td>11</td>
+          <td>7</td>
+          <td>8</td>
+          <td>40</td>
+      </tr>
+      <tr>
+          <td>Sheffield United</td>
+          <td>10</td>
+          <td>9</td>
+          <td>7</td>
+          <td>39</td>
+      </tr>
+      <tr>
+          <td>Manchester United</td>
+          <td>10</td>
+          <td>8</td>
+          <td>8</td>
+          <td>38</td>
+      </tr>
+      <tr>
+          <td>Wolves</td>
+          <td>8</td>
+          <td>12</td>
+          <td>6</td>
+          <td>36</td>
+      </tr>
+      <tr>
+          <td>Everton</td>
+          <td>10</td>
+          <td>6</td>
+          <td>10</td>
+          <td>36</td>
+      </tr>
+      <tr>
+          <td>Arsenal</td>
+          <td>7</td>
+          <td>13</td>
+          <td>6</td>
+          <td>34</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+</body>
+</html>
